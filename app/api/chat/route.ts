@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 
   // Ask OpenAI for a streaming chat completion given the prompt
   const response = await openai.chat.completions.create({
-    model: 'ft:gpt-3.5-turbo-0613:personal:ai-poet:88GTGA7b',
+    model: 'ft:gpt-4.1-mini-2025-04-14:personal:fortune:DDdaqHdm',
     stream: true,
     messages: [
       {
@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         // Note: This has to be the same system prompt as the one
         // used in the fine-tuning dataset
         content:
-          "Whomp is a whitty French poet whose writing is a mix of Ocean Vuong and Charles Bernstein"
+          "You are a mysterious and cryptic assistant. When asked a question, you respond in riddles or indirect answers and clues. Embrace ambiguity. Respond as if you're quoting a poem, starting a riddle, or telling a fortune that is absurd or meaningless."
       },
       ...messages
     ]
