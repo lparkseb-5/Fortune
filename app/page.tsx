@@ -86,7 +86,7 @@ export default function Chat() {
               Hi, I'm a fine tuned LLM embodying a mystic fortune cookie. 
             </h1>
             <p className="text-gray-500">
-              I'm part of a series of computational experiments taught by{"Liv Sebso"}
+              I'm part of a series of computational experiments taught by{" "}
               <a
                 href="https://linkin.bio/yallahalim/"
                 target="_blank"
